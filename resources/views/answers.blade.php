@@ -41,23 +41,23 @@
 
 		<li> In the CarController.php
 			<br/>
-		<code>
-			public function handle() {
+			<code>
+				public function handle() {
 
-        $name = $request["name"];
-        $age = $request["age"];
+	        $name = $request["name"];
+	        $age = $request["age"];
 
-        return view('cars.handle', compact('name', 'age'));
-    }
-		</code>
+	        return view('cars.handle', compact('name', 'age'));
+	    }
+			</code>
 
 		</li>
 
 		<li>
 			
-		1. http://example.com/handle-form?type=cat
-
-		2. http://example.com/handle-form?price=10
+			1. http://example.com/handle-form?type=cat
+				<br/>
+			2. http://example.com/handle-form?price=10
 
 		</li>
 
@@ -83,14 +83,19 @@
 
 			<li>
 				1. Using # to identify an element by id e.g. #app
+				<br/>
 				2. Using a .selector for the html class attribute of the element e.g. in csss .class-name
+				<br/>
 				3. Using the elements tag name e.g. body or div
 
 			</li>
 			<li>
 				1. This is preferable when your element is uniquely identified with an id attribute the wint the page / DOM scope
+				<br/>
 				2. This is preferable when your element has the class attribute set (not neceserrily unique)
+				<br/>
 				3. This is preferably when the elemend has no id or class attributed assigned but is uniquely identifiable by it's tag e.g. body
+				<br/>
 			</li>
 
 			<li>
@@ -107,6 +112,16 @@
 						border: 1px solid blue;
 					}
 				</style>
+
+				<code>
+					.pod {
+						display: block;
+						background-color:green;
+						width: 100%;
+						font-style: bold;
+						border: 1px solid blue;
+					}
+				</code>
 
 			</li>
 
@@ -128,6 +143,14 @@
 
 			</style>
 
+			<code>
+
+				p.token.key {
+					color:red;
+
+				}
+			</code>
+
 			<li>
 				All elemets with a class of "reg", find their direct decendent paragraph element and right-justify the text content within them.
 			</li>
@@ -137,6 +160,7 @@
 			</li>
 			<li class="nav-item"> 
 				This is a .nav-item element, please hover over it.
+				<br/>
 				<style type="text/css">
 
 				.nav-item {
@@ -149,13 +173,30 @@
 				}
 
 				</style>
+
+				<code>
+
+				.nav-item {
+				    color: red;
+				    transition: color 2s;
+				}
+
+				.nav-item:hover {
+				    color: blue;
+				}
+
+				</code>
 				
 			</li>
 			<li>
 				1. navs
+				<br/>
 				2. navbars
+				<br/>
 				3. cards
+				<br/>
 				4. buttons (.btn family)
+				<br/>
 				5. alerts
 			</li>
 			<li>
