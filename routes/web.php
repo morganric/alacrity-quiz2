@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::resource('cars', 'CarController');
+
+Route::any('handle-form', 'CarController@handle')->name('cars.handle');
+
+Route::get('/answers', function () {
+    return view('answers');
+});
+
+

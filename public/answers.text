@@ -1,0 +1,13 @@
+1. GET parameters are appended explicity to the destination url in the address bar whereas post parameters are hidden within the header of the outgoing POST request packet.
+
+2. Whether or not you are sumbiting data or requesting data with your form. 
+
+i.e. A search form might post a query parameter to a results page via a controller that would have access to the parameter (publicly) to run a database / search query for the results. Whereas a Model (post) create / update form might use POST parameters for the form submission post request to sent data to be updated / inserted into the DB or stored / processed server-side.
+
+3. The default is GET method
+
+4. To change to a post you would change the form's method attribute to POST i.e.
+
+<form method="POST" action="{{ route('some.postable.route')}}" ></form>
+
+5.
